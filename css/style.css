@@ -188,7 +188,7 @@ header {
 
 .flex-item {
     flex: 50%;
-    gap: 0;
+    flex-grow: o;
 }
 
 .left {
@@ -233,11 +233,6 @@ header {
 
 .inherit-width {
     width: 100%;
-}
-
-.section-padding {
-    padding-top: 10%;
-    padding-bottom: 10%;
 }
 
 .subheading {
