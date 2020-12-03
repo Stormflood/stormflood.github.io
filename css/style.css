@@ -141,7 +141,6 @@ header {
 }
 
 .section {
-    min-height: 100%;
     position: relative;
     background-color: white;
 }
@@ -189,7 +188,7 @@ header {
 
 .flex-item {
     flex: 50%;
-    gap: 1vw;
+    gap: 0;
 }
 
 .left {
