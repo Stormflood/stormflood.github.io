@@ -189,6 +189,7 @@ header {
 
 .flex-item {
     flex: 50%;
+    flex-grow: 0;
 }
 
 .left {
@@ -321,14 +322,6 @@ header {
     background-color: #f1f1f1;
 }
 
-.flex-left-padding {
-    padding-left: 0;
-    padding-top: 5%;
-}
-
-.flex-right-padding {
-    padding-right: 0;
-}
 
 .site-img {
     width: 60%;
@@ -472,11 +465,4 @@ header {
         font-size: 0.8vw;
     }
 
-    .flex-left-padding {
-        padding-left: 5%;
-    }
-
-    .flex-right-padding {
-        padding-right: 5%;
-    }
 }
