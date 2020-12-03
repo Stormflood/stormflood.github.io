@@ -189,7 +189,7 @@ header {
 
 .flex-item {
     flex: 50%;
-    flex-grow: 0;
+    gap: 1vw;
 }
 
 .left {
