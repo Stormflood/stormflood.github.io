@@ -17,8 +17,8 @@ h1 {
     font-family: 'Montserrat';
     font-weight: 600;
     color: #F6792C;
-    font-size: 12vw;
-    line-height: 13vw;
+    font-size: 8vw;
+    line-height: 9vw;
 }
 
 h2 {
@@ -33,15 +33,15 @@ h3 {
     font-family: 'Montserrat';
     font-weight: 600;
     color: #F6792C;
-    font-size: 10vw;
-    line-height: 10vw;
+    font-size: 7vw;
+    line-height: 8vw;
 }
 
 h4 {
     font-family: 'Montserrat';
     font-weight: 600;
     color: #F6792C;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 5vw;
 }
 
@@ -49,13 +49,18 @@ h5 {
     font-family: 'Montserrat';
     font-weight: 600;
     color: #F6792C;
-    font-size: 5vw;
-    line-height: 5vw;
+    font-size: 3vw;
+    line-height: 3.5vw;
 }
 
 p {
     font-family: 'Montserrat';
-    font-size: 3.5vw;
+    font-size: 3vw;
+}
+
+li {
+    font-size: 3vw;
+    text-align: left;
 }
 
 .bullet-list {
@@ -73,6 +78,7 @@ img {
 
 ul {
     list-style: none;
+    display: inline-block;
 }
 
 header {
@@ -109,7 +115,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    font-size: 2.5vh;
+    font-size: 2vh;
     right: 0;
 }
 
@@ -134,25 +140,6 @@ header {
     width: 100vw;
 }
 
-.half-slide {
-    overflow: hidden;
-    max-width: 100%;
-    height: 50vh;
-    width: 100vw;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.quarter-slide {
-    overflow: hidden;
-    max-width: 100%;
-    height: 25vh;
-    width: 100vw;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-}
-
 .section {
     min-height: 100%;
     position: relative;
@@ -170,11 +157,11 @@ header {
     position: absolute;
     z-index: 3;
     text-align: center;
-    font-size: 8vw;
+    font-size: 5vw;
     color: #0D4C91;
     font-family: 'Montserrat';
     font-weight: 600;
-    line-height: 8vw;
+    line-height: 6vw;
     padding: 10% 10% 0% 10%;
 }
 
@@ -189,8 +176,6 @@ header {
 .orange {
     color: #F6792C;
 }
-
-
 
 .flex-box-column {
     display: flex;
@@ -207,18 +192,27 @@ header {
 }
 
 .left {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 15%;
+}
+
+.column-left {
+    padding-right: 0%;
 }
 
 .right {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
-
 .top {
-    padding-top: 5%;
+    padding-top: 10%;
+}
+
+.bottom {
+    padding-bottom: 10%;
+}
+
+.bottom-column {
+    padding-bottom: 1vw;
 }
 
 .desktop-top {
@@ -248,7 +242,7 @@ header {
 
 .subheading {
     font-family: 'Montserrat';
-    font-size: 4vw;
+    font-size: 3vw;
     padding-top: 5%;
 }
 
@@ -283,8 +277,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 /** collapsible tabs **/
@@ -292,12 +286,12 @@ header {
     background-color: #eee;
     color: #0D4C91;
     cursor: pointer;
-    padding: 7vw;
+    padding: 5vw;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 6vw;
+    font-size: 4vw;
     font-family: 'Montserrat';
     font-weight: 600;
     padding-left: 5%;
@@ -337,22 +331,44 @@ header {
 }
 
 .site-img {
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    
+}
+
+.right-justify {
+    text-align: right;
+}
+
+.centre-justify {
+    text-align: center;
+}
+
+.vertical-align {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.horizontal-align {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
 }
 
 @media screen and (min-width: 600px) {
     /**Desktop**/
     header {
       flex-direction: row;
-      height: 25%;
+      height: 18%;
+      position: fixed;
     }
 
     .header-nav {
         width: 50%;
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 
     .logo {
@@ -362,8 +378,8 @@ header {
     }
 
     .logo-img {
-        max-width: 60%;
-        margin-left: 0;
+        max-width: 30%;
+        margin-left: 10%;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -373,29 +389,31 @@ header {
     }
 
     .left {
-        padding-right: 5%;
+        padding-right: 20%;
     }
 
     .right {
-        padding-left: 5%;
+        padding-left: 20%;
     }
 
     .subheading {
-        font-size: 1.7vw;
+        font-size: 1vw;
     }
 
     .mobile-img {
         padding-top: 0;
-        width: 100%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     p {
-        font-size: 1.5vw;
+        font-size: 0.8vw;
     }
 
     h1 {
-        font-size: 7vw;
-        line-height: 7vw;
+        font-size: 2.3vw;
+        line-height: 2.3vw;
     }
 
     h2 {
@@ -403,27 +421,41 @@ header {
     }
 
     h3 {
-        font-size: 7vw;
-        line-height: 7vw;
-    }
-
-    h4 {
         font-size: 3vw;
         line-height: 3vw;
     }
 
-    h5 {
+    h4 {
         font-size: 2vw;
-        line-height: 2vw;
+        line-height: 3vw;
+    }
+
+    h5 {
+        font-size: 1vw;
+        line-height: 1.5vw;
+    }
+
+    .top {
+        padding-top: 5%;
+    }
+
+    .bottom {
+        padding-bottom: 5%;
     }
 
     .collapsible {
-        padding: 1.5vw;
-        font-size: 3vw;
+        padding: 1.3vw;
+        font-size: 1.3vw;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
-    .subheading {
-        padding-right: 5%;
+    .column-left {
+        padding-right: 60%;
+    }
+
+    .content {
+        padding: 0% 20%;
     }
 
     .desktop-top {
@@ -431,12 +463,13 @@ header {
     }
 
     .hero-text {
-        font-size: 5vw;
-        line-height: 5vw;
+        font-size: 2vw;
+        line-height: 2.5vw;
+        padding: 10% 30% 0% 30%;
     }
 
     li {
-        font-size: 1.5vw;
+        font-size: 0.8vw;
     }
 
     .flex-left-padding {
