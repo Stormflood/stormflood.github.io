@@ -183,11 +183,13 @@ header {
 .flex-box-column {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .flex-box-row {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .flex-item {
