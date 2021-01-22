@@ -214,10 +214,6 @@ header {
     padding-right: 15%;
 }
 
-.column-left {
-    padding-right: 0%;
-}
-
 .right {
     padding-left: 15%;
 }
@@ -236,10 +232,6 @@ header {
 
 .desktop-top {
     padding-top: 0%;
-}
-
-.one-page-format {
-    padding: 10%;
 }
 
 .inherit-position {
@@ -337,7 +329,6 @@ header {
     background-color: #f1f1f1;
 }
 
-
 .site-img {
     width: 60%;
     margin-left: auto;
@@ -367,7 +358,6 @@ header {
     list-style-type: none;
 }
 
-
 @media screen and (min-width: 1025px) {
     /**Desktop**/
     header {
@@ -375,7 +365,6 @@ header {
       height: 18%;
       position: fixed;
     }
-
 
     .header-nav {
         width: 50%;
@@ -474,10 +463,6 @@ header {
         padding-right: 25%;
     }
 
-    .column-left {
-        padding-right: 60%;
-    }
-
     .content {
         padding: 0% 25%;
     }
@@ -499,5 +484,4 @@ header {
     .right-justify {
         text-align: right;
     }
-
 }
