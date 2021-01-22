@@ -23,6 +23,7 @@ h1 {
     color: #F6792C;
     font-size: 8vw;
     line-height: 9vw;
+    text-align: center;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
     font-family: 'Montserrat';
     font-weight: 600;
     color: #0D4C91;
+    text-align: center;
 }
 
 h3 {
@@ -39,6 +41,7 @@ h3 {
     color: #F6792C;
     font-size: 7vw;
     line-height: 8vw;
+    text-align: center;
 }
 
 h4 {
@@ -47,6 +50,7 @@ h4 {
     color: #F6792C;
     font-size: 4vw;
     line-height: 5vw;
+    text-align: center;
 }
 
 h5 {
@@ -55,6 +59,7 @@ h5 {
     color: #F6792C;
     font-size: 3vw;
     line-height: 3.5vw;
+    text-align: center;
 }
 
 p {
@@ -168,6 +173,7 @@ header {
     padding: 10% 10% 0% 10%;
 }
 
+
 .light-blue {
     color: #137EBF;
 }
@@ -184,17 +190,24 @@ header {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    align-items: center;
 }
 
 .flex-box-row {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    align-items: center;
 }
 
 .flex-item {
     flex: 50%;
     flex-grow: o;
+    align-items: center;
+}
+
+.flex-left {
+    align-items: center;
 }
 
 .left {
@@ -260,27 +273,29 @@ header {
     color: #F29C5C;
     font-family: 'Montserrat';
     font-weight: 600;
+    text-align: center;
 }
 
 .justify-paragraph {
     text-align: justify
 }
 
-.iframe-rwd  {
-    position: relative;
-    padding-bottom: 65.25%;
-    padding-top: 30px;
-    height: 0;
+.map-responsive {
     overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    width: 100%;
 }
 
-.iframe-rwd iframe {
-    position: absolute;
-    top: 0;
+.map-responsive iframe {
     left: 0;
-    width: 80%;
-    height: 80%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
+
 
 /** collapsible tabs **/
 .collapsible {
@@ -329,10 +344,6 @@ header {
     margin-right: auto;
 }
 
-.right-justify {
-    text-align: right;
-}
-
 .centre-justify {
     text-align: center;
 }
@@ -351,13 +362,20 @@ header {
     flex-direction: column-reverse;
 }
 
-@media screen and (min-width: 600px) {
+.dot-list {
+    list-style: inside;
+    list-style-type: none;
+}
+
+
+@media screen and (min-width: 1025px) {
     /**Desktop**/
     header {
       flex-direction: row;
       height: 18%;
       position: fixed;
     }
+
 
     .header-nav {
         width: 50%;
@@ -381,12 +399,16 @@ header {
         flex-direction: row;
     }
 
+    .flex-left {
+        align-items: flex-start;
+    }
+
     .left {
-        padding-right: 20%;
+        padding-right: 25%;
     }
 
     .right {
-        padding-left: 20%;
+        padding-left: 25%;
     }
 
     .subheading {
@@ -407,40 +429,49 @@ header {
     h1 {
         font-size: 2.3vw;
         line-height: 2.3vw;
+        text-align: left;
     }
 
     h2 {
+        text-align: left;
         font-size: 3vw;
     }
 
     h3 {
+        text-align: left;
         font-size: 3vw;
         line-height: 3vw;
     }
 
     h4 {
+        text-align: left;
         font-size: 2vw;
         line-height: 3vw;
     }
 
     h5 {
+        text-align: left;
         font-size: 1vw;
         line-height: 1.5vw;
     }
 
+    .redirect-link {
+        text-align: left;
+    }
+
     .top {
-        padding-top: 5%;
+        padding-top: 10%;
     }
 
     .bottom {
-        padding-bottom: 5%;
+        padding-bottom: 10%;
     }
 
     .collapsible {
         padding: 1.3vw;
         font-size: 1.3vw;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 25%;
+        padding-right: 25%;
     }
 
     .column-left {
@@ -448,7 +479,7 @@ header {
     }
 
     .content {
-        padding: 0% 20%;
+        padding: 0% 25%;
     }
 
     .desktop-top {
@@ -456,13 +487,17 @@ header {
     }
 
     .hero-text {
-        font-size: 2vw;
-        line-height: 2.5vw;
-        padding: 10% 30% 0% 30%;
+        font-size: 2.5em;
+        line-height: 1.2em;
+        padding: 0% 25% 0% 25%;
     }
 
     li {
         font-size: 0.8vw;
+    }
+
+    .right-justify {
+        text-align: right;
     }
 
 }
